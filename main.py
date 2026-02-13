@@ -5,9 +5,9 @@ from sqlalchemy.orm import Session
 from pydantic import BaseModel
 import shutil, os
 
-from .database import Base, engine, SessionLocal
-from .models import User, Document
-from .auth import hash_password, verify_password, create_access_token, get_current_user
+from database import Base, engine, SessionLocal
+from models import User, Document
+from auth import hash_password, verify_password, create_access_token, get_current_user
 
 Base.metadata.create_all(bind=engine)
 
