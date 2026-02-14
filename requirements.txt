@@ -2,8 +2,9 @@ fastapi
 uvicorn
 sqlalchemy
 python-jose
-passlib[bcrypt]
 python-multipart
 pymupdf
 python-dotenv
 psycopg2-binary
+bcrypt==4.0.1
+passlib[bcrypt]==1.7.4
